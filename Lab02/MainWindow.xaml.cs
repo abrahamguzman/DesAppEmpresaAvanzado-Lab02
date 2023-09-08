@@ -24,5 +24,23 @@ namespace Lab02
         {
             InitializeComponent();
         }
+
+        private void Button_Click (object sender, RoutedEventArgs e)
+        {
+            string user = txtUser.Text;
+            string password = txtPassword.Password;
+
+            HomeWindow window = new HomeWindow();
+
+            if (user == "mguzman" && password == "1234")
+            {
+                this.Close();
+                window.Show();
+            } else
+            {
+                Console.WriteLine("Datos incorrectos");
+            }
+            
+        }
     }
 }

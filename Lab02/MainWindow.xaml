@@ -7,6 +7,58 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button></Button>
+        <StackPanel
+            Width="220"
+            Grid.Row="1"
+            Orientation="Vertical"
+            >
+            <TextBlock 
+                Text="Usuario"
+                Foreground="DarkGray"
+                FontSize="12"
+                FontWeight="Medium"
+                FontFamily="Montserrat"                             
+                Margin="0,35,0,0"/>
+            <TextBox 
+                x:Name="txtUser"
+                FontSize="13"
+                FontWeight="Medium"
+                FontFamily="Montserrat"
+                CaretBrush="LightGray"
+                BorderBrush="DarkGray"
+                BorderThickness="0,0,0,2"
+                Height="28"
+                VerticalContentAlignment="Center">
+            </TextBox>
+            <TextBlock 
+                Text="Contraseña"
+                Foreground="DarkGray"
+                FontSize="12"
+                FontWeight="Medium"
+                FontFamily="Montserrat"                             
+                Margin="0,35,0,0"
+            />
+            <PasswordBox 
+                x:Name="txtPassword"
+                FontSize="13"
+                FontWeight="Medium"
+                FontFamily="Montserrat"
+                CaretBrush="LightGray"
+                BorderBrush="DarkGray"
+                BorderThickness="0,0,0,2"
+                Height="28"
+                VerticalContentAlignment="Center"
+                >
+            </PasswordBox>
+            <Button
+                Margin="0,20,0,0"
+                Content="INICIAR SESIÓN"
+                Background="SkyBlue"
+                Height="30"
+                Click="Button_Click"
+            />
+
+        </StackPanel>
+
     </Grid>
 </Window>
