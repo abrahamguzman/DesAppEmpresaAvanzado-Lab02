@@ -10,13 +10,13 @@
         <Menu>
             <MenuItem Header="Operaciones">
                 <MenuItem Header="Ingresos"/>
-                <MenuItem Header="Salidad"/>
+                <MenuItem Header="Salida" Click="OperacionesSalidaClick"/>
             </MenuItem>
 
             <MenuItem Header="Mantenimiento">
-                <MenuItem Header="Conductores"/>
+                <MenuItem Header="Conductores" Click="MantenimientoConductoresClick"/>
                 <MenuItem Header="Transportistas"/>
-                <MenuItem Header="Camiones"/>
+                <MenuItem Header="Camiones" Click="MantenimientoCamionesClick"/>
                 <MenuItem Header="Productos"/>
             </MenuItem>
 
@@ -26,5 +26,6 @@
                 <MenuItem Header="Salidad"/>
             </MenuItem>
         </Menu>
+        <ContentControl Grid.Row="1" x:Name="WindowContainer"/>
     </Grid>
 </Window>

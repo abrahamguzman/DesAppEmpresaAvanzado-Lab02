@@ -1,0 +1,40 @@
+﻿<Window x:Class="Lab02.OperacionesSalidadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02"
+        mc:Ignorable="d"
+        Title="OperacionesSalidadWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel
+            Orientation="Vertical"
+            Width="200"
+            >
+            
+        <TextBlock Text="Tipo de Documento" Margin="0,9,0,2"/>
+        <WrapPanel>
+            <RadioButton GroupName="MyRadioButtonGroup" Content="Opción 1   "/>
+            <RadioButton GroupName="MyRadioButtonGroup" Content="Opción 2"/>
+        </WrapPanel>
+            <TextBlock Text="Número de Documento" Margin="0,9,0,2"/>
+            <TextBox></TextBox>
+            <TextBlock Text="Peso" Margin="0,9,0,2"/>
+            <TextBox></TextBox>
+            <TextBlock Text="Tipo de auto" Margin="0,9,0,2"/>
+        <WrapPanel>
+             <RadioButton GroupName="MyRadioButtonGroup" Content="Mercedes  "/>
+             <RadioButton GroupName="MyRadioButtonGroup" Content="Hyndai  "/>
+             <RadioButton GroupName="MyRadioButtonGroup" Content="Lambo   "/>
+        </WrapPanel>
+            <TextBlock Text="Nombre de transportista" Margin="0,9,0,2"/>
+            <TextBox></TextBox>
+            <TextBlock Text="Fecha y hora" Margin="0,9,0,2"/>
+        <DatePicker></DatePicker>
+            <TextBlock Text="Peso de ingreso" Margin="0,9,0,2"/>
+            <TextBox></TextBox>
+            <TextBlock Text="Peso de salida" Margin="0,9,0,2"/>
+            <TextBox></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

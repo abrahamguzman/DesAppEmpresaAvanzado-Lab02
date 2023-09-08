@@ -23,5 +23,21 @@ namespace Lab02
         {
             InitializeComponent();
         }
+
+        private void OperacionesSalidaClick(object sender, RoutedEventArgs e)
+        {
+            OperacionesSalidadWindow windowOperacionesSalida = new OperacionesSalidadWindow();
+            windowOperacionesSalida.Show();
+        }
+        private void MantenimientoCamionesClick(object sender, RoutedEventArgs e)
+        {
+            MantenimientoCamionesWindow windowMantenimientoCamiones = new MantenimientoCamionesWindow();
+            windowMantenimientoCamiones.Show();
+        }
+        private void MantenimientoConductoresClick(object sender, RoutedEventArgs e)
+        {
+            MantenimientoConductores windowMantenimientoConductores = new MantenimientoConductores();
+            windowMantenimientoConductores.Show();
+        }
     }
 }
